@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="threads.lab_1.IntegralController">
+   <center>
+       <Pane prefHeight="284.0" prefWidth="480.0" BorderPane.alignment="CENTER">
+           <Label layoutX="15.0" layoutY="37.0" prefHeight="40.0" prefWidth="290.0" text="Кількість інтервалів розбиття відрізку інтегрування:" />
+           <Label layoutX="14.0" layoutY="77.0" prefHeight="40.0" prefWidth="165.0" text="Кількість потоків виконання:" />
+           <TextField fx:id="nThreads" layoutX="179.0" layoutY="85.0" prefHeight="25.0" prefWidth="285.0" />
+           <TextField fx:id="n" layoutX="305.0" layoutY="45.0" prefHeight="25.0" prefWidth="160.0" />
+           <Separator layoutX="15.0" layoutY="117.0" prefHeight="16.0" prefWidth="456.0" />
+           <Separator layoutX="15.0" layoutY="14.0" prefHeight="16.0" prefWidth="456.0" />
+           <Button layoutX="120.0" layoutY="133.0" mnemonicParsing="false" onAction="#calculateButton" prefHeight="25.0" prefWidth="240.0" text="Обчислити" />
+           <Separator layoutX="15.0" layoutY="158.0" prefHeight="16.0" prefWidth="456.0" />
+           <Label layoutX="14.0" layoutY="218.0" prefHeight="40.0" text="Час виконання: " />
+           <Label layoutX="14.0" layoutY="178.0" prefHeight="40.0" text="Значення інтегралу:" />
+           <TextField fx:id="time" layoutX="149.0" layoutY="226.0" prefHeight="25.0" prefWidth="316.0" />
+           <TextField fx:id="result" layoutX="149.0" layoutY="186.0" prefHeight="25.0" prefWidth="315.0" />
+           <Separator layoutX="15.0" layoutY="258.0" prefHeight="16.0" prefWidth="454.0" />
+       </Pane>
+   </center>
+   <top>
+       <MenuBar BorderPane.alignment="CENTER">
+           <Menu mnemonicParsing="false" text="Завдання">
+               <MenuItem mnemonicParsing="false" onAction="#showTheme" text="Тема" />
+            <MenuItem mnemonicParsing="false" onAction="#showTask" text="Завдання" />
+           </Menu>
+       </MenuBar>
+   </top>
+</BorderPane>
